@@ -42,7 +42,8 @@ class Proxy
 public:
   ros::NodeHandle nh_;
   ros::Publisher pub_;
-  tf::TransformListener tf_;
+  // tf::TransformListener tf_;
+  tf2_ros::Buffer tf_;
   interactive_markers::InteractiveMarkerClient client_;
   std::string topic_ns_;
   std::string target_frame_;
